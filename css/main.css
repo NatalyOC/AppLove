@@ -129,15 +129,13 @@ footer{
   position: relative;
   width: 100%;
 }
-<<<<<<< HEAD
 /* contenedor de imagen services */
-=======
 /* div{
   display: block;
   width: 33%;
   border: 2 solid green;  
 } */
->>>>>>> 8266bf8a9c9c6e7e4d0e8f87615e793c51bd1267
+
 .content-img-services {
   border: 1px dashed black;
   width:120px;
@@ -146,9 +144,7 @@ footer{
   display: inline-block;
   border: 2px solid yellowgreen;
   text-align: center;
-<<<<<<< HEAD
-=======
-}
+
 /* .content-img-hero{
   width: 1000px;
   text-align: center;
