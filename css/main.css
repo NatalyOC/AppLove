@@ -133,7 +133,7 @@ footer{
   width: 33%;
   border: 2 solid green;  
 } */
-.content-imag-services {
+.content-img-services {
   border: 1px dashed black;
   width:120px;
 }
@@ -142,8 +142,11 @@ footer{
   border: 2px solid yellowgreen;
   text-align: center;
 }
- 
-.content-imag-work {
+/* .content-img-hero{
+  width: 1000px;
+  text-align: center;
+} */
+.content-img-work {
   border: 1px dashed black;
   width:120px;
 
@@ -152,6 +155,7 @@ footer{
   display: inline-block;
   border: 2px solid yellowgreen;
   text-align: center;
+  width: 23%;
 }
 
 img[alt="services"]{
@@ -179,6 +183,3 @@ img[alt="work"]{
   width: 100%;
 }
 
-h5{
-  text-align: center;
-}
