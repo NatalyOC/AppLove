@@ -18,6 +18,7 @@ body {
 }
 
 img {
+  /* alineado vertical */
   vertical-align: middle;
 }
 
@@ -73,6 +74,7 @@ a:hover {
 header{
   border:1px solid red;
   position: relative;
+  top:0;
   height: 100px;
   
 }
@@ -101,12 +103,15 @@ nav{
 }
 
 section {
+  
   border: 1px solid yellow;
   text-align: center;
 }
-/* figure {
+ .content-imag-services {
   border: 1px dashed black;
-}  */
+  width:120px;
+
+}  
 ul{
   padding: 0;
   margin: 0;
@@ -120,18 +125,47 @@ li{
 }
 footer{
   background: black;
+  bottom:0;
   color:white;
   text-align: center;
   height: 50px;
-  position: fixed;
-  bottom:0;
+  position: relative;
   width: 100%;
 }
-div{
-  display: inline-block;
+/* div{
+  display: block;
   width: 33%;
+  border: 2 solid green;  
+} */
+
+.content-2-box-main div{
+  display: inline-block;
+  border: 2px solid yellowgreen;
+  text-align: center;
 }
 
 img[alt="services"]{
-  width: 120px;
+  width: 100%;
+}
+img[alt="hero"]{
+  width: 100%;
+}
+/* .container-outer-header{
+  background: black;
+  height: 50px;
+  position:fixed;
+  top: 0;
+  width: 100%;
+} */
+
+.container-outer-footer{
+  background: black;
+  height: 50px;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+h5{
+  text-align: center;
 }
