@@ -107,11 +107,7 @@ section {
   border: 1px solid yellow;
   text-align: center;
 }
- .content-imag-services {
-  border: 1px dashed black;
-  width:120px;
 
-}  
 ul{
   padding: 0;
   margin: 0;
@@ -137,8 +133,22 @@ footer{
   width: 33%;
   border: 2 solid green;  
 } */
+.content-imag-services {
+  border: 1px dashed black;
+  width:120px;
+}
+#content-2-box-main div{
+  display: inline-block;
+  border: 2px solid yellowgreen;
+  text-align: center;
+}
+ 
+.content-imag-work {
+  border: 1px dashed black;
+  width:120px;
 
-.content-2-box-main div{
+}  
+#content-3-box-project figure{
   display: inline-block;
   border: 2px solid yellowgreen;
   text-align: center;
@@ -148,6 +158,9 @@ img[alt="services"]{
   width: 100%;
 }
 img[alt="hero"]{
+  width: 100%;
+}
+img[alt="work"]{
   width: 100%;
 }
 /* .container-outer-header{
