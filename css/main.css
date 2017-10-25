@@ -15,9 +15,11 @@ body {
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.71429;
+  font-family: 'Raleway', sans-serif;
 }
 
 img {
+  /* alineado vertical */
   vertical-align: middle;
 }
 
@@ -73,6 +75,7 @@ a:hover {
 header{
   border:1px solid red;
   position: relative;
+  top:0;
   height: 100px;
   
 }
@@ -101,12 +104,11 @@ nav{
 }
 
 section {
+  
   border: 1px solid yellow;
   text-align: center;
 }
-/* figure {
-  border: 1px dashed black;
-}  */
+
 ul{
   padding: 0;
   margin: 0;
@@ -120,18 +122,56 @@ li{
 }
 footer{
   background: black;
+  bottom:0;
   color:white;
   text-align: center;
   height: 50px;
-  position: fixed;
-  bottom:0;
+  position: relative;
   width: 100%;
 }
-div{
+/* contenedor de imagen services */
+.content-img-services {
+  border: 1px dashed black;
+  width:120px;
+}
+#content-2-box-main div{
   display: inline-block;
-  width: 33%;
+  border: 2px solid yellowgreen;
+  text-align: center;
+}
+/* contenedor de imagen word */
+.content-img-work {
+  border: 1px dashed black;
+  width:120px;
+
+}  
+#content-3-box-project figure{
+  display: inline-block;
+  border: 2px solid yellowgreen;
+  text-align: center;
+  width: 23%;
+}
+/* Calculamos el ancho de la imagenes por medio del selector por atributo*/
+img[alt="services"]{
+  width: 100%; /* con respecto a su padre*/
+}
+img[alt="hero"]{
+  width: 100%; /* con respecto a su padre*/
+}
+img[alt="work"]{
+  width: 100%;/* con respecto a su padre*/
+}
+/* Establecemos el color,el alto, el ancho y la posicion por medio de selector de clase .<nombre-clase> /footer-afuera sea estatico   */
+.container-outer-footer{
+  background: black;
+  height: 50px;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* Establecemos imagen a cada seccion por medio de los selectores  de id #<nombre_id> */
+
+#content-1{
+  background-image: url("assets/images/bg-home.jpg"); 
 }
 
-img[alt="services"]{
-  width: 120px;
-}
