@@ -130,36 +130,24 @@ footer{
   width: 100%;
 }
 /* contenedor de imagen services */
-/* div{
-  display: block;
-  width: 33%;
-  border: 2 solid green;  
-} */
-
 .content-img-services {
   border: 1px dashed black;
   width:120px;
 }
+#content-2-box-main{
+  background: #f17c72;
+  /* border: 3px dashed yellow; */
+  height: 100%;
+  border: 1px dashed blue;
+
+}
+
 #content-2-box-main div{
+  
   display: inline-block;
   border: 2px solid yellowgreen;
   text-align: center;
 
-/* .content-img-hero{
-  width: 1000px;
-  text-align: center;
-} */
-.content-img-work {
-  border: 1px dashed black;
-  width:120px;
-
-}  
-#content-3-box-project figure{
-  display: inline-block;
-  border: 2px solid yellowgreen;
-  text-align: center;
-  width: 23%;
->>>>>>> 8266bf8a9c9c6e7e4d0e8f87615e793c51bd1267
 }
 /* contenedor de imagen word */
 .content-img-work {
@@ -175,7 +163,6 @@ footer{
 }
 /* Calculamos el ancho de la imagenes por medio del selector por atributo*/
 img[alt="services"]{
-<<<<<<< HEAD
   width: 100%; /* con respecto a su padre*/
 }
 img[alt="hero"]{
@@ -185,24 +172,6 @@ img[alt="work"]{
   width: 100%;/* con respecto a su padre*/
 }
 /* Establecemos el color,el alto, el ancho y la posicion por medio de selector de clase .<nombre-clase> /footer-afuera sea estatico   */
-=======
-  width: 100%;
-}
-img[alt="hero"]{
-  width: 100%;
-}
-img[alt="work"]{
-  width: 100%;
-}
-/* .container-outer-header{
-  background: black;
-  height: 50px;
-  position:fixed;
-  top: 0;
-  width: 100%;
-} */
-
->>>>>>> 8266bf8a9c9c6e7e4d0e8f87615e793c51bd1267
 .container-outer-footer{
   background: black;
   height: 50px;
@@ -210,12 +179,35 @@ img[alt="work"]{
   bottom: 0;
   width: 100%;
 }
-<<<<<<< HEAD
 /* Establecemos imagen a cada seccion por medio de los selectores  de id #<nombre_id> */
 
 #content-1{
-  background-image: url("assets/images/bg-home.jpg"); 
-}
-=======
->>>>>>> 8266bf8a9c9c6e7e4d0e8f87615e793c51bd1267
+  background-image: url(../assets/images/bg-home.jpg); 
+  color:white;
+  height: 500px;
+  width: 100%;
 
+}
+#content-1:last-child{
+  border: 2px dashed blueviolet;
+  
+}
+#content-1 a{
+ 
+ 
+ background-color: rgb(46, 204, 113);  
+ color: white;
+ border-radius: 3px;
+ font-weight: 500px;
+ 
+ /*
+ background-color: rgb(46, 204, 113);
+ padding: 10px;
+ color: #fff;
+ border-radius: 5px;
+ border: 0px;
+ font-weight: 600px;
+ position: relative;
+ top: 190px; */
+
+}
