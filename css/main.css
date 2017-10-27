@@ -72,43 +72,43 @@ a:hover {
 }
 
 /*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
+/*Estilo para el cabezado */
 header{
-  border:1px solid red;
-  position: relative;
+  position:fixed;
   top:0;
+  width: 100%;
   height: 100px;
-  
+  font-weight: 700;  
 }
+
 .logo-header{
-  border: 1px dashed red;
   position:absolute;
   width: 80px;
-  right:10%;
+  right:30%;
   top:10%;
+  
+}
+.container-header{
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  top:0;
+  position:absolute;
 }
 
 .box-header{
-  border: 1px dashed red;
+
   display: inline-block;
   margin: 0;
+  /* z-index: 9999; */
 
 }
-.box-header:last-child{
-  border: 1px dashed red;
 
-}
 nav{
-  position: absolute;
+  position:absolute;
   left: 10%; /* respecto al padre*/
-  top: 30%;
+  top: 25%;
 }
-
-section {
-  
-  border: 1px solid yellow;
-  text-align: center;
-}
-
 ul{
   padding: 0;
   margin: 0;
@@ -120,6 +120,14 @@ li{
   list-style: none;
   margin:10px;
 }
+/*Contenido */
+section {
+  width: 100%;
+ 
+  text-align: center;
+}
+
+
 footer{
   background: black;
   bottom:0;
@@ -129,58 +137,90 @@ footer{
   position: relative;
   width: 100%;
 }
-/* div{
-  display: block;
-  width: 33%;
-  border: 2 solid green;  
-} */
+/* contenedor de imagen services */
 .content-img-services {
-  border: 1px dashed black;
+
   width:120px;
 }
-#content-2-box-main div{
-  display: inline-block;
-  border: 2px solid yellowgreen;
-  text-align: center;
+#content-2-box-main{
+  background: #f17c72;
+  /* border: 3px dashed yellow; */
+  height: 100%;
+ 
+
 }
-/* .content-img-hero{
-  width: 1000px;
+
+#content-2-box-main div{
+  
+  display: inline-block;
+
   text-align: center;
-} */
+  line-height: 10px;
+  
+
+}
+/* contenedor de imagen word */
 .content-img-work {
-  border: 1px dashed black;
+
   width:120px;
 
 }  
 #content-3-box-project figure{
   display: inline-block;
-  border: 2px solid yellowgreen;
+ 
   text-align: center;
   width: 23%;
 }
-
+/* Calculamos el ancho de la imagenes por medio del selector por atributo*/
 img[alt="services"]{
-  width: 100%;
+  width: 100%; /* con respecto a su padre*/
 }
 img[alt="hero"]{
-  width: 100%;
+  width: 100%; /* con respecto a su padre*/
 }
 img[alt="work"]{
-  width: 100%;
+  width: 100%;/* con respecto a su padre*/
 }
-/* .container-outer-header{
-  background: black;
-  height: 50px;
-  position:fixed;
-  top: 0;
-  width: 100%;
-} */
-
-.container-outer-footer{
+/* Establecemos el color,el alto, el ancho y la posicion por medio de selector de clase .<nombre-clase> /footer-afuera sea estatico   */
+/* .container-outer-footer{
   background: black;
   height: 50px;
   position:fixed;
   bottom: 0;
   width: 100%;
-}
+} */
+/* Establecemos imagen a cada seccion por medio de los selectores  de id #<nombre_id> */
 
+#content-1{
+  background-image: url(../assets/images/bg-home.jpg); 
+  color:white;
+  height: 500px;
+  width: 100%;
+
+}
+#content-1:last-child{
+  border: 2px dashed blueviolet;
+  
+}
+#content-1 a{
+ 
+ 
+ background-color: rgb(46, 204, 113);  
+ color: white;
+ border-radius: 3px;
+ font-weight: 500px;
+ 
+ /*
+ background-color: rgb(46, 204, 113);
+ padding: 10px;
+ color: #fff;
+ border-radius: 5px;
+ border: 0px;
+ font-weight: 600px;
+ position: relative;
+ top: 190px; */
+
+}
+#content-2-box-main {
+
+}
