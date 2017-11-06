@@ -3,6 +3,8 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin:0;
+  padding:0;
 }
 
 *:before, *:after {
@@ -15,7 +17,7 @@ body {
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.71429;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway';
 }
 
 img {
@@ -69,95 +71,149 @@ a:hover {
 
 .text-uppercase {
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 /*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
 /*Estilo para el cabezado */
 header{
+  background-color: #fff;
+  font-weight: 700;
+  padding: 15px 160px 15px 140px;
   position:fixed;
   top:0;
   width: 100%;
-  height: 100px;
-  font-weight: 700;  
+  z-index:1000;
 }
 
+.container-header figure{
+  display: inline-block;
+  left: 74%;
+  position: relative;
+    
+}
 .logo-header{
-  position:absolute;
-  width: 80px;
-  right:30%;
-  top:10%;
+  width: 70px;
   
 }
 .container-header{
   background: #fff;
-  width: 100%;
-  height: 100%;
   top:0;
-  position:absolute;
+  width: 100%;
 }
 
 .box-header{
-
   display: inline-block;
-  margin: 0;
-  /* z-index: 9999; */
-
-}
-
-nav{
-  position:absolute;
   left: 10%; /* respecto al padre*/
+  margin: 0;
   top: 25%;
 }
 ul{
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 li{
   /*  */
   display:inline;
   /*  */
   list-style: none;
-  margin:10px;
+  margin: 0 20px;
 }
 /*Contenido */
 section {
-  width: 100%;
- 
   text-align: center;
+  width: 100%;
 }
+/*Estilos para la seccion principal*/
+/* Establecemos imagen a cada seccion por medio de los selectores  de id #<nombre_id> */
 
-
-footer{
-  background: black;
-  bottom:0;
+#content-1{
+  background-image: url(../assets/images/bg-home.jpg); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color:white;
-  text-align: center;
-  height: 50px;
-  position: relative;
+  height: 500px;
+  margin-top: 100px;
   width: 100%;
-}
-/* contenedor de imagen services */
-.content-img-services {
 
-  width:120px;
-}
-#content-2-box-main{
-  background: #f17c72;
-  /* border: 3px dashed yellow; */
-  height: 100%;
- 
 
 }
+#content-1 div{
+  padding: 60px 0 140px 0;
+}
+#content-1 h2{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 19px;
+  margin-top: 19px;
+}
+#content-1 h1{
+  font-size: 53px;
+  margin-top: 44px;
+}
 
-#content-2-box-main div{
-  
-  display: inline-block;
+#content-1 a{
+ background-color: rgb(46, 204, 113);  
+ /* border-radius: 3px; */
+ color: white;
+ font-size: 14px;
+ margin-top: 50px;
+ padding: 11px 20px;
+}
+#content-1 a:hover {
+  color: #f17c72;
+}
 
+/* Estilos para la seccion de services */
+
+#content-2 {
+  color: #fff;
+  background-color: #f17c72;
+  padding: 70px 0;
   text-align: center;
-  line-height: 10px;
-  
 
+}
+#content-2-box-main h2 {
+  font-size: 35px;
+  margin-bottom: 29px;
+  margin-top:29px;
+}
+
+#content-2-box-main h4 {
+  /* font-size: 35px; */
+  margin-bottom: 70px;
+  margin-top:21px;
+}
+
+/* contenedor de imagen services */
+img[alt="services"]{
+  width: 50%;
+  margin-bottom: 20px;
+} 
+
+#content-2 div div {
+  display: inline-block;
+  
+  width: 30%;
+}
+
+
+/*Estilo para seccion work*/
+#content-3{
+  padding: 70px 0;
+  font-weight: bold;
+  text-align: center;
+}
+#content-3 h2{
+  font-size: 35px;
+  margin-bottom: 29px;
+  margin-top:29px;
+}
+
+#content-3-box-project{
+  width: 80%;
+  margin: 50px auto;
 }
 /* contenedor de imagen word */
 .content-img-work {
@@ -167,60 +223,52 @@ footer{
 }  
 #content-3-box-project figure{
   display: inline-block;
- 
   text-align: center;
-  width: 23%;
+  margin: 0;
+  width: 30%;
+  margin-bottom: 65px;
+}
+
+#content-3-box-project figure figcaption{
+  margin-top: 10px;
 }
 /* Calculamos el ancho de la imagenes por medio del selector por atributo*/
-img[alt="services"]{
-  width: 100%; /* con respecto a su padre*/
-}
+
 img[alt="hero"]{
-  width: 100%; /* con respecto a su padre*/
+  /* width: 100%; con respecto a su padre */
+  margin-top: 60px;
+  width: 80%;
 }
 img[alt="work"]{
-  width: 100%;/* con respecto a su padre*/
+  width: 85%;/* con respecto a su padre*/
 }
+
+
+
+
+
+
 /* Establecemos el color,el alto, el ancho y la posicion por medio de selector de clase .<nombre-clase> /footer-afuera sea estatico   */
-/* .container-outer-footer{
+
+.container-outer-footer{
+
   background: black;
   height: 50px;
   position:fixed;
   bottom: 0;
-  width: 100%;
-} */
-/* Establecemos imagen a cada seccion por medio de los selectores  de id #<nombre_id> */
 
-#content-1{
-  background-image: url(../assets/images/bg-home.jpg); 
+  width: 100%;
+} 
+
+footer{
+  background: black;
   color:white;
-  height: 500px;
+  text-align: center;
   width: 100%;
-
+  padding-top: 7px;
+  height: 70px;
 }
-#content-1:last-child{
-  border: 2px dashed blueviolet;
-  
-}
-#content-1 a{
- 
- 
- background-color: rgb(46, 204, 113);  
- color: white;
- border-radius: 3px;
- font-weight: 500px;
- 
- /*
- background-color: rgb(46, 204, 113);
- padding: 10px;
- color: #fff;
- border-radius: 5px;
- border: 0px;
- font-weight: 600px;
- position: relative;
- top: 190px; */
-
-}
-#content-2-box-main {
-
+footer p{
+  margin-top: 18px;
+  margin-bottom: 18px;
 }

@@ -1,0 +1,239 @@
+/*CLASES REUTILIZABLES*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.71429;
+  font-family: 'Raleway', sans-serif;
+}
+
+img {
+  /* alineado vertical */
+  vertical-align: middle;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container:after {
+  clear: both;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+a {
+  color: #373B47;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E95853;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
+/*Estilo para el cabezado */
+header{
+  position:fixed;
+  top:0;
+  width: 100%;
+  height: 100px;
+  font-weight: 700;  
+}
+
+.logo-header{
+  position:absolute;
+  width: 80px;
+  right:30%;
+  top:10%;
+  
+}
+.container-header{
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  top:0;
+  position:absolute;
+}
+
+.box-header{
+
+  display: inline-block;
+  margin: 0;
+  /* z-index: 9999; */
+
+}
+
+nav{
+  position:absolute;
+  left: 10%; /* respecto al padre*/
+  top: 25%;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+li{
+  /*  */
+  display:inline;
+  /*  */
+  list-style: none;
+  margin:10px;
+}
+/*Contenido */
+section {
+  width: 100%;
+ 
+  text-align: center;
+}
+
+
+footer{
+  background: black;
+  bottom:0;
+  color:white;
+  text-align: center;
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+/* contenedor de imagen services */
+.content-img-services {
+
+  width:120px;
+}
+#content-2-box-main{
+  background: #f17c72;
+  /* border: 3px dashed yellow; */
+  height: 100%;
+
+}
+
+#content-2-box-main div{
+  
+  display: inline-block;
+
+  text-align: center;
+
+}
+/* contenedor de imagen word */
+.content-img-work {
+
+  width:120px;
+
+}  
+#content-3-box-project figure{
+  display: inline-block;
+ 
+  text-align: center;
+  width: 23%;
+}
+/* Calculamos el ancho de la imagenes por medio del selector por atributo*/
+img[alt="services"]{
+  width: 100%; /* con respecto a su padre*/
+}
+img[alt="hero"]{
+  width: 100%; /* con respecto a su padre*/
+}
+img[alt="work"]{
+  width: 100%;/* con respecto a su padre*/
+}
+/* Establecemos el color,el alto, el ancho y la posicion por medio de selector de clase .<nombre-clase> /footer-afuera sea estatico   */
+
+.container-outer-footer{
+
+  background: black;
+  height: 50px;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+} 
+/* Establecemos imagen a cada seccion por medio de los selectores  de id #<nombre_id> */
+
+#content-1{
+  background-image: url(../assets/images/bg-home.jpg); 
+  color:white;
+  height: 500px;
+  width: 100%;
+=======
+  width: 100%;
+}
+/* Establecemos imagen a cada seccion por medio de los selectores  de id #<nombre_id> */
+
+#content-1{
+  background-image: url(../assets/images/bg-home.jpg); 
+  color:white;
+  height: 500px;
+  width: 100%;
+>>>>>>> 52b5a8faa2bdcd63ab11093147fa455efe086d5f
+
+}
+#content-1:last-child{
+  border: 2px dashed blueviolet;
+  
+}
+#content-1 a{
+ 
+ 
+ background-color: rgb(46, 204, 113);  
+ color: white;
+ border-radius: 3px;
+ font-weight: 500px;
+ 
+ /*
+ background-color: rgb(46, 204, 113);
+ padding: 10px;
+ color: #fff;
+ border-radius: 5px;
+ border: 0px;
+ font-weight: 600px;
+ position: relative;
+ top: 190px; */
+
+<<<<<<< HEAD
+}
+#content-2-box-main {
+
+=======
+>>>>>>> 52b5a8faa2bdcd63ab11093147fa455efe086d5f
+}
